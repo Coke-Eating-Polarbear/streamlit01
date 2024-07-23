@@ -30,7 +30,7 @@ def get_ticker_symbol(company_name):
 st.title('무슨 주식을 사야 부자가 되려나')
 stock_name = st.sidebar.text_input("회사이름")
 date_range = st.sidebar.date_input("시작일-종료일",[datetime.today(), datetime.today() + timedelta(days=1)])
-button_result = st.sidebar.button("주가 데이터 확인")
+button_result = st.sidebar.button("확인")
 if button_result == True:
     ticker_symbol = get_ticker_symbol(stock_name)     
     start_p = date_range[0]               
